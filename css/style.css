@@ -1,0 +1,433 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+ul, ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* ========================
+navbar part starts
+=========================== */
+nav {
+    background-color: #EEEDDE;
+}
+nav ul li {
+    margin-left: 100px;
+    position: relative;
+}
+nav ul li a {
+    font-size: 16px;
+    font-weight: 300;
+    color: #203239;
+    transition: .4s;
+    position: relative;
+}
+
+nav ul li .dropdown {
+    position: absolute;
+    background: #EEEDDE;
+    top: 50px;
+    left: 0;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: 0.4s;
+}
+
+.dropdown ul li {
+    margin: 0;
+    padding: 10px 20px;
+    border-bottom: 1px solid #F6762E;
+    cursor: pointer;
+}
+
+nav ul li:hover .dropdown {
+    transform: rotateX(0deg);
+}
+nav ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    transform: translateX(-50);
+    width: 23px;
+    height: 3px;
+    background-color: #F6762E;
+    content: '';
+    opacity: 0;
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    font-weight: 600;
+
+}
+nav ul li a:hover:after {
+    opacity: 1;
+}
+/* ========================
+navbar part starts
+=========================== */
+
+/* ========================
+banner part starts
+=========================== */
+#banner {
+    background-color: #EEEDDE;
+    padding-bottom: 80px;
+}
+
+#banner h1 {
+    color: #203239;
+    font-size: 54px;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+#banner p {
+    color: #203239;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#banner .search {
+    position: relative;
+    width: 675px;
+    margin-top: 56px;
+}
+
+#banner .search input {
+    width: 100%;
+    padding: 23px 0 23px 56px;
+}
+#banner .search i {
+    color: #203239;
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    transform: translateX(50%);
+    left: 20px;
+}
+#banner .search input::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#banner .search button {
+    background-color: #203239;
+    color: #fff;
+    padding: 13px 40px;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    transform: translateX(50%);
+    top: 20%;
+    right: 80px;
+    box-shadow: 0px 6px 8px rgba(32, 50, 57, 0.25);
+}
+
+#banner .box {
+    width: 610px;
+    display: flex;
+    margin-top: 80px;
+}
+#banner .item {
+    margin-right: 50px;
+}
+#banner .box h2 {
+    font-size: 56px;
+}
+
+#banner .box h2 span {
+    color: #F6762E;
+    margin-left: -12px;
+}
+
+#banner .box p {
+    color: rgba(32, 50, 57, 0.55);
+    font-size: 16px;
+    font-weight: 300;
+}
+/* ========================
+banner part ends
+=========================== */
+
+/* ========================
+property part starts
+=========================== */
+#property {
+    background-color: #fff;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#property h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    color: #203239;
+}
+#property .custom-card {
+    margin-top: 50px;
+    padding: 24px;
+    font-family: 'Poppins', sans-serif !important;
+    box-shadow: none;
+    border: 1px solid rgba(247, 203, 178, 0.285);
+    border-radius: 10px;
+}
+
+#property h5 {
+    border-left: 5px solid #F6762E;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+#property p{
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(32, 50, 57, 0.55);
+}
+
+#property a {
+    color: #203239;
+}
+.edit-card {
+    position: relative;
+    border: 0;
+}
+#property span {
+    position: absolute;
+    right: 3px;
+    color: #F6762E;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+/* ========================
+property part ends
+=========================== */
+
+/* ========================
+redesign part starts
+=========================== */
+#redesign {
+    background-color: #EEEDDE;
+    padding-top: 80px;
+    padding-bottom: 160px;
+}
+
+#redesign h4 {
+    color: #F6762E;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#redesign h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    color: #203239;
+    margin-top: 20px;
+}
+
+#redesign .img {
+    position: relative;
+    margin-top: 50px;
+}
+#redesign .front-img {
+    position: absolute;
+    top: 50px;
+    left: 87px;
+}
+
+#redesign h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    color: #203239;
+}
+
+#redesign p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #203239;
+}
+
+#redesign .button {
+    display: flex;
+}
+
+.button button {
+    margin-right: 40px;
+    background-color: #203239;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 13px 40px;
+    border: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.button i {
+    margin-right: 10px;
+}
+
+.button button:hover {
+    background-color: #EEEDDE;
+    color: #203239;
+    border: 2px solid #203239;
+}
+
+/* ========================
+redesign part ends
+=========================== */
+
+/* ========================
+kota part starts
+=========================== */
+#kota {
+    background-color: #fff;
+    padding-top: 100px;
+    margin-bottom: 60px;
+}
+
+#kota .title {
+    margin-bottom: 50px;
+}
+#kota h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F6762E;
+}
+
+#kota h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    color: #203239;
+}
+
+#kota h3 {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: #203239;
+}
+
+#kota p {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #203239;
+}
+/* ========================
+kota part ends
+=========================== */
+
+/* ========================
+kami part starts
+=========================== */
+#kami {
+    background-color: #EEEDDE;
+    padding: 50px 0;
+}
+
+#kami .info-box {
+    display: flex;
+    
+}
+
+#kami .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+#kami .title h3 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    color: #203239;
+}
+
+#kami .box {
+    margin-right: 50px;
+}
+#kami .info {
+    display: flex;
+    align-items: center;
+}
+#kami .number {
+    margin-left: 30px;
+}
+
+#kami button {
+    background-color: #F6762E;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    width: 195px;
+    transition: 0.5s;
+    border: none;
+    margin-top: 30px;
+}
+
+#kami i {
+    font-size: 32px;
+    color: #203239;
+}
+#kami h4 {
+    font-size: 20px;
+}
+#kami button:hover {
+    color: #F6762E;
+    background: rgba(255, 117, 39, 0.2);;
+}
+
+#kami .img {
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-between;
+}
+/* ========================
+kami part ends
+=========================== */
+
+/* ========================
+footer part starts
+=========================== */
+#footer {
+    background-color: #203239;
+    padding: 30px 0;
+}
+
+#footer .icon-box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#footer .icon-box i {
+    color: #EEEDDE;
+    font-size: 18px;
+}
+/* ========================
+footer part ends
+=========================== */
